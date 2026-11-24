@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+
+    <link rel="stylesheet" href="{% static 'Ayala/estilos.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Registra tus datos</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="Registro">Registro</a></li>
+                <li><a href="Taller">dos</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+<form method="POST">
+    <label>email:</label>
+    <input type="email" name="Correo" placeholder="Escribe tu correo..." required>
+    <label>¿cual es tu inspiracion en el arte?:</label>
+    <input type="text" name="inspiracion" placeholder="Escribe..." required>
+    <label>¿cual es tu nivel de arte?:</label>
+    <input type="radio" name="Nivel" value="principiante" required>principiante
+    <input type="radio" name="Nivel" value="intermedio" required>intermedio
+    <input type="radio" name="Nivel" value="avanzado" required>avanzado
+    <label>En escala del 1 al 10 cuantas horas practicas a la semana</label>
+    <input type="number" name="hora" min="0" max="10" placeholder="Escribe la horas" required>
+    <label>¿que tecnicas sabes?:</label><br><br>
+    <input type="checkbox" name="tecnica" value="Acuarela">Acuarela
+    <input type="checkbox" name="tecnica" value="Oleo">Oleo
+    <input type="checkbox" name="tecnica" value="A lapiz">A lapiz
+    <input type="checkbox" name="tecnica" value="Digital">Digital
+    <button type="submit">Guardar</button>
+
+</form>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Creado</p>
+    </footer>
+
+</body>
+</html>
