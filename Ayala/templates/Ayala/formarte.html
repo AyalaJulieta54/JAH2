@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="inicio">Inicio</a></li>
                 <li><a href="Registro">Registro</a></li>
-                <li><a href="Taller">dos</a></li>
+                <li><a href="Taller">Taller</a></li>
                 <li><a href="#">tres</a></li>
             </ul>
         </nav>
@@ -28,19 +28,26 @@
 <form method="POST">
     <label>email:</label>
     <input type="email" name="Correo" placeholder="Escribe tu correo..." required>
-    <label>¿cual es tu inspiracion en el arte?:</label>
+    <label>¿cual es tu inspiracion en el arte?:</label> <br><br>
     <input type="text" name="inspiracion" placeholder="Escribe..." required>
-    <label>¿cual es tu nivel de arte?:</label>
+
+    <label>¿cual es tu nivel de arte?:</label> <br><br>
     <input type="radio" name="Nivel" value="principiante" required>principiante
     <input type="radio" name="Nivel" value="intermedio" required>intermedio
     <input type="radio" name="Nivel" value="avanzado" required>avanzado
-    <label>En escala del 1 al 10 cuantas horas practicas a la semana</label>
+
+    <label>En escala del 1 al 10 cuantas horas practicas a la semana</label> <br><br>
     <input type="number" name="hora" min="0" max="10" placeholder="Escribe la horas" required>
+
     <label>¿que tecnicas sabes?:</label><br><br>
     <input type="checkbox" name="tecnica" value="Acuarela">Acuarela
     <input type="checkbox" name="tecnica" value="Oleo">Oleo
     <input type="checkbox" name="tecnica" value="A lapiz">A lapiz
     <input type="checkbox" name="tecnica" value="Digital">Digital
+    <input type="checkbox" name="tecnica" value="Otro">Otro
+
+    <label>¿que dias quieres asistir al Taller?:</label> <br><br>
+    <input type="date" name="Dias" placeholder="Escribe que dias" required>
     <button type="submit">Guardar</button>
 
 </form>
