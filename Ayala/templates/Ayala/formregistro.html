@@ -25,7 +25,8 @@
             </ul>
         </nav>
     </header>
-<form method="POST">
+<form action="{%url 'registro'%}" method="POST">
+    {% csrf_token %}
     <label>Nombre:</label>
     <input type="text" name="nombre" placeholder="Escribe tu nombre..." required>
     <label>Apellido Materno:</label>
@@ -38,10 +39,10 @@
     <input type="radio" name="genero" value="Femenino">Femenino
     <input type="radio" name="genero" value="Masculino">Masculino<br><br>
     <label>Intereses:</label><br><br>
-    <input type="checkbox" name="imtereses" value="Futbol">Futbol
-    <input type="checkbox" name="imtereses" value="Musica">Musica
-    <input type="checkbox" name="imtereses" value="Video Juegos">Juegos
-    <input type="checkbox" name="imtereses" value="Salir a pasear">Salir a pasear
+    <input type="checkbox" name="intereses" value="Futbol">Futbol
+    <input type="checkbox" name="intereses" value="Musica">Musica
+    <input type="checkbox" name="intereses" value="Video Juegos">Juegos
+    <input type="checkbox" name="intereses" value="Salir a pasear">Salir a pasear
     <button type="submit">Guardar</button>
 
 </form>
